@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="clickMe()">Click</button>
+<h1 id="myTxt">A0523I1</h1>
+
+<script>
+    // document.write("<h1>Ha Noi</h1>")
+    // document.write("<button>Ha Noi</button>")
+
+    a = document.getElementById('myTxt').innerText; //lấy dữ liệu
+    alert(a);
+    b = prompt("Nhap ten lop: ");
+    document.getElementById('myTxt').innerHTML = b; //cập nhật
+</script>
+<script src="myJs.js"></script>
+<!--<script>-->
+<!--    ten = prompt("Nhap ten: ");-->
+<!--    // tuoi = +prompt("Nhap tuoi: ") + 1;-->
+<!--    tuoi = parseInt(prompt("Nhap tuoi: ")) + 1;-->
+<!--    alert("Ban ten la: " + ten + " - va tuoi la: " + tuoi);-->
+<!--</script>-->
+</body>
+</html>
