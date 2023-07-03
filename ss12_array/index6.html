@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arrViet = ["xin chao", "con meo"];
+        let arrAnh = ["hello", "cat"];
+
+        let key = prompt("Nhap tu tieng Việt: ");
+        let isExist = false;
+        for(let index = 0; index < arrViet.length; index++){
+            if(arrViet[index] == key){
+                document.write(arrAnh[index]);
+                isExist = true;
+                break;
+            }
+        }
+        if(!isExist){
+            document.write("Không tìm thấy khớp với từ khóa: "+key);
+        }
+    </script>
+</body>
+</html>

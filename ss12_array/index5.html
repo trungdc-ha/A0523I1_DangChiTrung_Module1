@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //Tạo mảng 2d với row, col và value
+        // nhập từ bàn phím.
+        let row = +prompt("Nhạp số hàng của mảng 2d: "); //2
+        let col = +prompt("Nhạp số cột của mảng 2d: "); //3
+
+        let arr2d = new Array(row);
+        //[U, U]
+        for(let row_index = 0; row_index < arr2d.length; row_index++){
+            arr2d[row_index] = new Array(col);
+            // [ [U, U, U] , U]
+            for(let col_index = 0; col_index < arr2d[row_index].length; col_index++){
+                let value = + prompt("Nhap giá trị tại [ " + row_index + " , "+col_index + "] :")
+                arr2d[row_index][col_index] = value;
+            }
+        }
+        console.log(arr2d);
+
+        //Hiển thị
+        // let arr2d = [
+        //     [1, 2, 3, 4], //0
+        //     [5, 6, 7, 8], //1
+        //     [6, 0, 9, 1], //2
+        // ];
+
+        for(let row = 0; row < arr2d.length; row++){
+            for(let col = 0; col < arr2d[row].length; col++){
+                document.write(arr2d[row][col] + "&nbsp;")
+            }
+            document.write("</br>")
+        }
+
+    </script>
+</body>
+</html>
