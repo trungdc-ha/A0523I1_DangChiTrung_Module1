@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // function changeValue(number) {
+        //     number = 1;
+        // }
+        // let num = 20;
+        // changeValue(num);
+        // console.log("Result: "+ num); //20
+
+        function changeValue(number) {
+            number[2] = 1;
+        }
+        let num = [24];
+        changeValue(num);
+        console.log("Result: " + num); //[20, U, 1]
+    </script>
+</body>
+</html>
