@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class DienThoai {
+        constructor(ten, hangSX) {
+            this.ten = ten;
+            this.hangSX = hangSX;
+        }
+
+        goiDien(){
+            document.write("dien thoai "+ this.ten + " dang goi dien </br>");
+        }
+
+        getHangSX(){
+            return this.hangSX;
+        }
+
+        setHangSX(tenMoi){
+            this.hangSX = tenMoi;
+        }
+    }
+
+
+    //B2 tạo đối tượng bằng từ khóa new
+    let iphone = new DienThoai("iphone13", "Apple");
+    let samsung = new DienThoai("Samsung S10", "Samsung");
+
+    iphone.goiDien();
+    samsung.goiDien();
+    // samsung.setHangSX("SamSung Viet Nam")
+    samsung.hangSX = "SamSung Han Quoc";
+    document.write(samsung.getHangSX());
+</script>
+</body>
+</html>
