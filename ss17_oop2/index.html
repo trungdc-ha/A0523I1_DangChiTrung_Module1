@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Animal {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        getName() {
+            // return this.name;
+            document.write("Animal name: " + this.name + "</br>")
+        }
+
+        setName(newName) {
+            this.name = newName;
+        }
+    }
+
+    class Dog extends Animal {
+        getName() {
+            document.write("Dog name: " + this.name + "</br>")
+        }
+    }
+
+    class Cat extends Animal {
+        getName() {
+            document.write("Cat name: " + this.name + "</br>")
+        }
+    }
+
+    let myDog = new Dog("cau vang", 2);
+    let myCat = new Cat("meo tam the", 1);
+    myDog.getName();
+    myCat.getName();
+
+</script>
+</body>
+</html>
